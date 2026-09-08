@@ -1,0 +1,15 @@
+{
+  "created": "2026-09-08",
+  "assets": [
+    { "path": "/models/face_landmarker.task", "creator": "Google MediaPipe", "source": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task", "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff", "note": "Face landmark model, downloaded at development time and served locally. See upstream model documentation for model terms." },
+    { "path": "/vendor/mediapipe/*", "creator": "Google MediaPipe", "origin": "@mediapipe/tasks-vision@1.0.1", "license": "Apache-2.0", "licenseFile": "/models/MEDIAPIPE-LICENSE.txt" },
+    { "path": "procedural face accessories", "creator": "Original KomaSnap artwork", "origin": "src/lib/face-effects.ts", "license": "CC0-1.0" },
+    { "path": "/demo/portrait-*.svg", "creator": "Original KomaSnap illustration", "origin": "scripts/prepare-assets.mjs", "license": "CC0-1.0", "note": "Four original illustrated expressions, not photographs or AI-generated imagery. No user photos or third-party characters were used." },
+    { "path": "/icon.svg", "creator": "Original KomaSnap artwork", "license": "CC0-1.0" },
+    { "path": "/social-preview.png", "creator": "Original KomaSnap artwork", "origin": "scripts/prepare-social.mjs", "license": "CC0-1.0", "note": "Composed from the original local demo illustrations." },
+    { "path": "procedural stickers and textures", "creator": "Original KomaSnap artwork", "origin": "src/lib/stickers.ts", "license": "CC0-1.0" },
+    { "path": "/fonts/barlow.ttf", "source": "https://github.com/google/fonts/tree/main/ofl/barlowcondensed", "license": "SIL-OFL-1.1", "licenseFile": "/fonts/barlow-OFL.txt" },
+    { "path": "/fonts/geist.ttf", "source": "https://github.com/google/fonts/tree/main/ofl/geist", "license": "SIL-OFL-1.1", "licenseFile": "/fonts/geist-OFL.txt" },
+    { "path": "/fonts/geist-mono.ttf", "source": "https://github.com/google/fonts/tree/main/ofl/geistmono", "license": "SIL-OFL-1.1", "licenseFile": "/fonts/geist-mono-OFL.txt" }
+  ]
+}
