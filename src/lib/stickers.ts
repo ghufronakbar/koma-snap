@@ -7,6 +7,12 @@ const definitions: [
     CollectionId,
     string
 ][] = [
+    ['heropow', 'POW! burst', 'hero', '<path d="m6 35 22 2-4-23 27 15L66 6l10 26 31-13-8 27 17 14-19 15 9 25-29-10-15 25-14-25-29 12 6-27L3 62l20-14Z" fill="#f6d154" stroke="#263953" stroke-width="3"/><text x="60" y="72" font-size="31" font-style="italic" fill="#ba3e34" stroke="none">POW!</text>'],
+    ['heroskyline', 'City skyline', 'hero', '<path d="M5 100V61h15V35h18v20h12V15h21v36h13V34h17v31h14v35Z" fill="#2b507f" stroke="#263953" stroke-width="3"/><path d="M26 43h5v7h-5zm0 17h5v7h-5zm30-36h7v9h-7zm0 19h7v9h-7zm0 19h7v9h-7zm33-19h5v7h-5zm0 18h5v7h-5Z" fill="#f6d154" stroke="none"/>'],
+    ['herostar', 'Hero star', 'hero', '<path d="m60 8 15 32 35 5-26 25 6 35-30-17-30 17 6-35-26-25 35-5Z" fill="#d45543" stroke="#263953" stroke-width="4"/><path d="m60 32 8 18 20 3-15 14 4 20-17-10-17 10 4-20-15-14 20-3Z" fill="#f6d154" stroke="none"/>'],
+    ['herocaption', 'To be continued', 'hero', '<path d="M5 24h110v73H5Z" fill="#f6d154" stroke="#263953" stroke-width="4"/><text x="60" y="52" font-size="14" fill="#263953" stroke="none">TO BE</text><text x="60" y="78" font-size="17" fill="#263953" stroke="none">CONTINUED…</text>'],
+    ['heroissue', 'Hero edition', 'hero', '<circle cx="60" cy="60" r="51" fill="#fff3d4" stroke="#2b507f" stroke-width="5"/><circle cx="60" cy="60" r="43" fill="none" stroke="#d45543" stroke-width="2"/><text x="60" y="53" font-size="23" fill="#ba3e34" stroke="none">HERO</text><text x="60" y="76" font-size="16" fill="#2b507f" stroke="none">EDITION</text>'],
+    ['heroaction', 'Action banner', 'hero', '<path d="m4 35 107-14 5 68-106 12Z" fill="#2b507f" stroke="#263953" stroke-width="3"/><path d="m13 31 97-9" stroke="#d45543" stroke-width="5"/><text x="60" y="73" font-size="24" font-style="italic" fill="#f6d154" stroke="none">ACTION!</text>'],
     ['keepsake', 'For keeps', 'normal', '<rect x="7" y="32" width="106" height="55" rx="5" fill="#fffefa"/><text x="60" y="65" font-size="18">FOR KEEPS</text>'],
     ['outlineheart', 'Heart outline', 'normal', '<path d="M60 98 20 58C-1 31 34 8 60 35c26-27 61-4 40 23Z" fill="none" stroke-width="4"/>'],
     ['littledate', 'A little moment', 'normal', '<path d="M15 28h90v65H15Z" fill="#fffefa"/><text x="60" y="53" font-size="14">A LITTLE</text><text x="60" y="77" font-size="18">MOMENT</text>'],

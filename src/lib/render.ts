@@ -168,7 +168,7 @@ export async function renderArtwork(scene: Scene, width = 480, signal?: AbortSig
     const painter = context(result);
     const scale = result.width / art.width;
     painter.scale(scale, scale);
-    const paper = scene.collection === 'normal' ? '#fffefa' : scene.collection === 'shoujo' ? '#f6eff8' : scene.collection === 'pocket' ? '#e0e8ba' : scene.collection === 'riso' ? '#f6e8d5' : scene.collection === 'vhs' ? '#e5e7ed' : scene.collection === 'flash' ? '#fff2df' : '#fffaf0';
+    const paper = scene.collection === 'normal' ? '#fffefa' : scene.collection === 'hero' ? '#fff3d4' : scene.collection === 'shoujo' ? '#f6eff8' : scene.collection === 'pocket' ? '#e0e8ba' : scene.collection === 'riso' ? '#f6e8d5' : scene.collection === 'vhs' ? '#e5e7ed' : scene.collection === 'flash' ? '#fff2df' : '#fffaf0';
     painter.fillStyle = paper;
     painter.fillRect(0, 0, art.width, art.height);
     painter.fillStyle = '#282824';
@@ -176,7 +176,7 @@ export async function renderArtwork(scene: Scene, width = 480, signal?: AbortSig
     painter.textAlign = 'left';
     text(painter, 'KOMASNAP', 24, 31, 180, 19, 14, 1, true);
     painter.textAlign = 'right';
-    text(painter, scene.collection === 'pocket' ? 'LVL. 098' : 'ISSUE 001', art.width - 24, 30, 130, 10, 10);
+    text(painter, scene.collection === 'pocket' ? 'LVL. 098' : scene.collection === 'hero' ? 'HERO EDITION' : 'ISSUE 001', art.width - 24, 30, 130, 10, 10);
     for (const panel of art.panels) {
         check(signal);
         const photo = scene.photos[panel.slot];

@@ -1480,10 +1480,13 @@ svg {
 }
 
 .look-symbol.normal { color: #66645b; background: #eeece6; }
+.look-symbol.hero { color: #ba3e34; background: #f3e4ad; }
 .look-symbol.riso { color: #aa4163; background: #eed4d8; }
 .look-symbol.vhs { color: #536480; background: #dce0e8; }
 .look-symbol.flash { color: #906138; background: #f0dfc4; }
 .collection-art.normal { transform: rotate(-2deg); }
+.collection-art.hero { background: #f6e8ba; transform: rotate(3deg); }
+.collection-art.hero .collection-art-overlay { color: #a82e26; background: #ffe9a8; }
 .collection-art.riso { background: #f1dfcc; transform: rotate(3deg); }
 .collection-art.vhs { background: #d9dce3; transform: rotate(-3deg); }
 .collection-art.flash { background: #f4e6d0; transform: rotate(2deg); }

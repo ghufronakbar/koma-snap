@@ -4,6 +4,8 @@ Revisi aktif: [Live preview dan aksesori wajah lokal](07-live-face-effects.md). 
 
 Revisi koleksi: [Normal dan tiga look baru](08-expanded-looks.md). Menggantikan batas empat koleksi dan penundaan risograph/VHS di rencana awal.
 
+Revisi berikutnya: [Shadow Koma Impact dan Hero Press](09-impact-and-hero-press.md). Koma Impact tidak lagi memakai threshold bayangan keras; total menjadi sembilan look.
+
 Tanggal: 8 September 2026. Status: siap menjadi brief implementasi, belum diimplementasikan.
 
 ## Keputusan utama
@@ -16,7 +18,7 @@ Tagline: **Your face. Four panels. Your story.**
 - Foto diproses di browser. Hosting hanya mengirim aplikasi dan aset statis.
 - Prioritas: kualitas hasil, kenyamanan capture, mobile UX, personalisasi, kemudian motion.
 - Tiga ruang utama: **Booth → Studio → Result**. Pembuka singkat merupakan state awal Booth, bukan landing page panjang.
-- Delapan look: Normal, Koma Impact, Soft Shoujo, Copy Club, Pocket ’98, Risograph, Midnight VHS, Flash Booth.
+- Sembilan look: Normal, Koma Impact, Hero Press, Soft Shoujo, Copy Club, Pocket ’98, Risograph, Midnight VHS, Flash Booth.
 - Tiga layout: Four-Panel Strip, Manga Page, Cover Shot.
 - PNG sebagai output utama; share dan clipboard merupakan progressive enhancement.
 - Tidak membuat test case, test suite, atau memasang framework testing. Build, lint, dan inspeksi manual tetap bagian penyelesaian.

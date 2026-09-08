@@ -1,4 +1,4 @@
-export type CollectionId = 'normal' | 'impact' | 'shoujo' | 'copy' | 'pocket' | 'riso' | 'vhs' | 'flash';
+export type CollectionId = 'normal' | 'impact' | 'shoujo' | 'copy' | 'pocket' | 'riso' | 'vhs' | 'flash' | 'hero';
 export type LayoutId = 'strip' | 'manga' | 'cover';
 export type OutputFormat = 'story' | 'square' | 'strip';
 export type Step = 'intro' | 'booth' | 'studio' | 'result';
@@ -64,6 +64,7 @@ export const collections: {
 }[] = [
     { id: 'normal', name: 'Normal', eyebrow: 'JUST YOU', description: 'Original color. Nothing to hide behind.', color: '#8c897f', palette: ['#f4f1e9', '#e4e2dc', '#383834'], prompts: ['Just be you', 'A little smile', 'Switch it up', 'One for keeps'], mark: 'YOU', icon: 'camera' },
     { id: 'impact', name: 'Koma Impact', eyebrow: 'THE ORIGINAL', description: 'Ink. Impact. Main character energy.', color: '#b83b25', palette: ['#ebe4d6', '#c3503b', '#272725'], prompts: ['Meet the hero', "Something’s off", 'Plot twist', 'Final move'], mark: '!!', icon: 'sparkle' },
+    { id: 'hero', name: 'Hero Press', eyebrow: 'A COLORFUL ORIGIN', description: 'Bold color. Ink outlines. Your origin story.', color: '#ba3e34', palette: ['#f6e8ba', '#d45543', '#2b507f'], prompts: ['Your origin story', 'Look to the sky', 'A heroic entrance', 'Save the day'], mark: 'POW!', icon: 'sparkle' },
     { id: 'shoujo', name: 'Soft Shoujo', eyebrow: 'A SOFTER SIDE', description: 'For your soft-focus daydreams.', color: '#857095', palette: ['#e8dfed', '#f2e5dd', '#676075'], prompts: ['A little smile', 'Look away', 'Secret crush', 'Happy ending'], mark: '✧', icon: 'sparkle' },
     { id: 'copy', name: 'Copy Club', eyebrow: 'OFF THE RECORD', description: 'Rough edges. Zero apologies.', color: '#66694e', palette: ['#d6d3bf', '#dfbd64', '#343432'], prompts: ['Straight face', 'Side eye', 'Make some noise', 'No rules'], mark: 'COPY', icon: 'layers' },
     { id: 'pocket', name: 'Pocket ’98', eyebrow: 'PRESS START', description: 'Small pixels. Big nostalgia.', color: '#627744', palette: ['#cbd5a0', '#e5e6ca', '#34482e'], prompts: ['Player ready', 'New challenger', 'Power up', 'You win'], mark: '+98', icon: 'grid' },
