@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+.fallback-shell { min-height: 100svh; display: flex; flex-direction: column; }
+.fallback-home, .fallback-actions a { text-decoration: none; }
+.fallback-main { flex: 1; display: grid; grid-template-columns: .8fr 1fr; align-items: center; gap: clamp(32px, 7vw, 110px); padding: 72px 0; max-width: 1050px; width: 100%; margin: auto; }
+.fallback-print { border: 2px solid var(--ink); background: var(--surface); padding: 24px; box-shadow: 8px 8px 0 var(--line); transform: rotate(-3deg); text-align: center; }
+.fallback-print span { display: block; font: 11px var(--mono), monospace; letter-spacing: 2px; padding: 14px 0; }
+.fallback-print strong { display: block; border-block: 2px solid var(--ink); padding: 24px 0; color: var(--red); font: 800 clamp(80px, 12vw, 160px)/1 var(--display), sans-serif; letter-spacing: -5px; }
+.fallback-copy h1 { font: 750 clamp(42px, 5vw, 68px)/1.04 var(--display), sans-serif; letter-spacing: -1.5px; margin: 20px 0; max-width: 10ch; }
+.fallback-copy > p { max-width: 44ch; }
+.fallback-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 28px; }
+.fallback-copy .fallback-note { font-size: 12px; margin: 20px 0 0; }
+@media (max-width: 640px) {
+  .fallback-main { grid-template-columns: 1fr; gap: 36px; padding: 42px 0; }
+  .fallback-print { width: min(100%, 260px); margin: auto; padding: 12px; }
+  .fallback-print strong { font-size: 88px; padding: 12px 0; }
+  .fallback-copy h1 { max-width: 14ch; }
+}
+
 :root {
   --paper: #f5f1e8;
   --surface: #fffcf5;

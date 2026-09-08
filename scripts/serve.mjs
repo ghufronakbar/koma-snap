@@ -17,5 +17,14 @@ createServer(async (request, response) => {
     const content = await readFile(path);
     response.writeHead(200, { 'Content-Type': types[extname(path)] || 'application/octet-stream', 'Content-Length': content.length, 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-cache' });
     response.end(request.method === 'HEAD' ? undefined : content);
-  } catch { response.writeHead(404, { 'Content-Type': 'text/plain' }); response.end('Not found'); }
+  } catch {
+    try {
+      const content = await readFile(resolve(root, '404.html'));
+      response.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': content.length, 'X-Content-Type-Options': 'nosniff', 'Cache-Control': 'no-cache' });
+      response.end(request.method === 'HEAD' ? undefined : content);
+    } catch {
+      response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      response.end(request.method === 'HEAD' ? undefined : 'Not found');
+    }
+  }
 }).listen(port, '127.0.0.1', () => console.log(`KomaSnap static preview: http://localhost:${port}`));

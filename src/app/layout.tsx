@@ -1,20 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { fontClasses } from './fonts';
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "../../public/fonts/geist.ttf",
-  variable: "--font-geist-sans",
-  display: "swap",
-});
-
-const geistMono = localFont({
-  src: "../../public/fonts/geist-mono.ttf",
-  variable: "--font-geist-mono",
-  display: "swap",
-});
-
-const display = localFont({ src: "../../public/fonts/barlow.ttf", variable: "--font-display", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -34,7 +20,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${display.variable}`}
+      className={fontClasses}
     >
       <body>{children}</body>
     </html>
